@@ -1,0 +1,471 @@
+<HBProfile>
+	<Name>[HQ] Undead 5-12</Name>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>3</MinFreeBagSlots>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>9999</MaxLevel>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	
+	<AvoidMobs>
+		<Mob Name="Training Dummy" Entry="44820" /><!--Undead Training Dummy-->
+	</AvoidMobs>
+	
+	<Blackspots>
+		<!--Cold Hearth Manor Sign-->
+		<Blackspot X="2188.518" Y="661.0852" Z="33.29134" Radius="4.017753"/>	
+		<Blackspot X="1966.69" Y="1602.635" Z="88.19614" Radius="10" />
+		<Blackspot X="2376.343" Y="1493.492" Z="34.70063" Radius="4.017753" />
+	</Blackspots>
+	
+	<Mailboxes>
+	</Mailboxes>
+	
+	<Vendors>
+	<!--Calston Estate Vendors-->
+		<Vendor Name="Franklin Brinklestein" Entry="44034" Type="Food" X="2234.77" Y="1021.9" Z="36.4495"/>
+		<Vendor Name="Gordo" Entry="10666" Type="Food" X="2238.43" Y="1001.97" Z="36.58329"/>
+	<!--Calston Estate Trainers-->
+		<Vendor Name="Dark Cleric Claressa" Entry="48614" Type="Train" TrainClass="Priest" X="2236.35" Y="1009.74" Z="36.79127"/>
+		<Vendor Name="Maressa Milner" Entry="48612" Type="Train" TrainClass="Warlock" X="2235.5" Y="1012.34" Z="36.80368"/>
+		<Vendor Name="Larah Firesong" Entry="48613" Type="Train" TrainClass="Mage" X="2233.2" Y="1009.78" Z="36.64421"/>
+		<Vendor Name="Darna Woad" Entry="48618" Type="Train" TrainClass="Hunter" X="2223.78" Y="1001.81" Z="36.47761"/>
+		<Vendor Name="Karla Fain" Entry="48616" Type="Train" TrainClass="Warrior" X="2224.72" Y="998.88" Z="36.5359"/>
+		<Vendor Name="Shernon the Footpad" Entry="48615" Type="Train" TrainClass="Rogue" X="2221.5" Y="999.688" Z="36.48019"/>
+		<Vendor Name="Ortezza" Entry="38247" Type="Train" TrainClass="Hunter" X="-1125.943" Y="-5508.729" Z="11.95828"/>
+		<Vendor Name="Tunari" Entry="38245" Type="Train" TrainClass="Priest" X="-1118.16" Y="-5539.962" Z="11.97764"/>
+		<Vendor Name="Voldreka" Entry="42618" Type="Train" TrainClass="Warlock" X="-1126.516" Y="-5395.474" Z="12.20943"/>
+		<Vendor Name="Legati" Entry="38244" Type="Train" TrainClass="Rogue" X="-1125.962" Y="-5446.971" Z="11.98163"/>
+		<Vendor Name="Zen'tabra" Entry="38243" Type="Train" TrainClass="Druid" X="-1175.747" Y="-5540.455" Z="11.94026"/>
+		<Vendor Name="Ortezza" Entry="38247" Type="Train" TrainClass="Hunter" X="-1125.943" Y="-5508.729" Z="11.95828"/>
+		<Vendor Name="Tunari" Entry="38245" Type="Train" TrainClass="Priest" X="-1118.16" Y="-5539.962" Z="11.97764" />
+		<Vendor Name="Voldreka" Entry="42618" Type="Train" TrainClass="Warlock" X="-1126.516" Y="-5395.474" Z="12.20943" />
+		<Vendor Name="Legati" Entry="38244" Type="Train" TrainClass="Rogue" X="-1125.962" Y="-5446.971" Z="11.98163" />
+		<Vendor Name="Zen'tabra" Entry="38243" Type="Train" TrainClass="Druid" X="-1175.747" Y="-5540.455" Z="11.94058" />
+		<Vendor Name="Soratha" Entry="38246" Type="Train" TrainClass="Mage" X="-1151.981" Y="-5569.874" Z="11.93533" />
+		<Vendor Name="Nekali" Entry="38242" Type="Train" TrainClass="Shaman" X="-1160.215" Y="-5396.146" Z="12.23187" />
+		<Vendor Name="Nortet" Entry="38037" Type="Train" TrainClass="Warrior" X="-1171.352" Y="-5440.788" Z="11.94391" />
+		
+	<!--Tirisfal Glades Vendors-->
+		<Vendor Name="Innkeeper Renee" Entry="5688" Type="Food" X="2285.95" Y="282.613" Z="33.24683" />
+		<Vendor Name="Eliza Callen" Entry="2137" Type="Repair" X="2302.86" Y="288.523" Z="33.35699" />
+		<Vendor Name="Constance Brisboise" Entry="3522" Type="Repair" X="2157.345" Y="656.6657" Z="34.54608" />
+		<Vendor Name="Blacksmith Rand" Entry="2116" Type="Repair" X="1842.443" Y="1570.188" Z="96.58139" />
+	</Vendors>
+	
+	<!--Undead Quest Overrides-->
+	<Quest Id="24997" Name="Graverobbers">
+		<Objective QuestName="Graverobbers" QuestId="24997" Type="KillMob" MobId="1941" KillCount="8">
+                <Hotspots>
+                    <Hotspot X="2613.26" Y="413.4034" Z="36.47172" />
+                    <Hotspot X="2684.771" Y="479.4792" Z="16.33921" />
+                    <Hotspot X="2603.52" Y="532.202" Z="17.54621" />
+                </Hotspots>
+            </Objective>
+            <Objective QuestName="Graverobbers" QuestId="24997" Type="KillMob" MobId="1675" KillCount="5">
+                <Hotspots>
+                    <Hotspot X="2816.732" Y="353.3618" Z="22.91257" />
+		    <Hotspot X="2891.264" Y="404.0455" Z="26.54923" />
+                </Hotspots>
+            </Objective>
+	    <Objective Type="CollectItem" ItemId="2834" CollectCount="6">
+			<CollectFrom>
+				<Mob Name="Rot Hide Graverobber" Id="1941" />
+				<Mob Name="Rot Hide Graverobber" Id="1675" />
+				<Mob Name="Rot Hide Graverobber" Id="1674" />
+			</CollectFrom>
+			<Hotspots>
+                    		<Hotspot X="2613.26" Y="413.4034" Z="36.47172" />
+                    		<Hotspot X="2684.771" Y="479.4792" Z="16.33921" />
+                    		<Hotspot X="2603.52" Y="532.202" Z="17.54621" />
+                	</Hotspots>
+	    </Objective>				
+	</Quest>	
+	<Quest Id="25003" Name="The Family Crypt">
+		<Objective Type="KillMob" MobId="1530" KillCount="5">
+			<Hotspots>
+				<Hotspot X="2853.641" Y="687.5914" Z="135.4419" />
+				<Hotspot X="2973.256" Y="749.5015" Z="97.30669" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="1534" KillCount="5">
+			<Hotspots>
+				<Hotspot X="2853.641" Y="687.5914" Z="135.4419" />
+				<Hotspot X="2973.256" Y="749.5015" Z="97.30669" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="24975" Name="Fields of Grief">
+		<Objective Type="CollectItem" ItemId="2846" CollectCount="10">
+			<CollectFrom>
+				<GameObject Name="Tirisfal Pumpkin" Id="375"/>
+			</CollectFrom>
+			<Hotspots>
+				<Hotspot X="2281.382" Y="1174.377" Z="31.44218" />
+				<Hotspot X="2276.417" Y="1213.399" Z="31.44314" />
+				<Hotspot X="2293.749" Y="1252.434" Z="31.44314" />
+				<Hotspot X="2287.318" Y="1369.34" Z="33.33371" />
+				<Hotspot X="2345.87" Y="1376.291" Z="33.33371" />
+				<Hotspot X="2283.463" Y="1439.767" Z="33.33371" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="24978" Name="Reaping the Reapers">
+		<Objective Type="KillMob" MobId="1934" KillCount="10">
+			<Hotspots>
+				<Hotspot X="2281.382" Y="1174.377" Z="31.44218" />
+				<Hotspot X="2276.417" Y="1213.399" Z="31.44314" />
+				<Hotspot X="2293.749" Y="1252.434" Z="31.44314" />
+				<Hotspot X="2287.318" Y="1369.34" Z="33.33371" />
+				<Hotspot X="2345.87" Y="1376.291" Z="33.33371" />
+				<Hotspot X="2283.463" Y="1439.767" Z="33.33371" />
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="26801" Name="Scourge on our Perimeter">
+		<Objective Type="KillMob" MobId="1890" KillCount="8">
+			<Hotspots>
+				<Hotspot X="1919.483" Y="1622.099" Z="85.29385"/>
+				<Hotspot X="1967.845" Y="1640.188" Z="77.12695"/>
+				<Hotspot X="2012.089" Y="1609.348" Z="72.76481"/>
+				<Hotspot X="2017.864" Y="1569.919" Z="77.83659"/>
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<QuestOrder IgnoreCheckPoints="True" >
+
+	<CustomBehavior File="UserSettings" LootMobs="True" UseFlightPaths="False" PullDistance="25" />
+		<If Condition="(Me.MapId == 1)" >
+			<CustomBehavior File="UseTransport"
+							TransportId="164871"
+							WaitAtX="1843.367" WaitAtY="-4394.569" WaitAtZ="135.2331" 
+							StandOnX="1835.534" StandOnY="-4386.455" StandOnZ="135.0031"
+							TransportStartX="1833.509" TransportStartY="-4391.543" TransportStartZ="152.7679"
+							TransportEndX="2062.376" TransportEndY="292.998" TransportEndZ="114.973"
+							GetOffX="2065.884" GetOffY="281.6734" GetOffZ="97.03143" 
+							/>
+		</If>
+		<If Condition="(Me.ZoneId == 3430) || (Me.ZoneId == 3433) || (Me.ZoneId == 6455) || (Me.ZoneId == 3487)" >
+			<RunTo X="10021" Y="-7014" Z="49.71769"  />
+			<CustomBehavior File="RunMacro" Macro="/dismount" NumOfTimes="1" WaitTime="1000"/>
+			<CustomBehavior File="WaitTimer" WaitTime="2000" GoalText="Waiting for  {TimeRemaining}" />
+			 <While Condition="(Me.ZoneId != 1497)" >
+				<CustomBehavior File="InteractWith" MobId="184502" Range="5" X="10021" Y="-7014" Z="49.71769"  />
+				<CustomBehavior File="WaitTimer" WaitTime="30000" GoalText="Waiting for  {TimeRemaining}" />
+			 </While>
+		</If>
+		<!--<ClearVendor />-->
+		<SetVendor>
+			<Vendors>
+			<!-- Brill Vendors -->
+				<Vendor Name="Хамлин Аткинс" Entry="3547" Type="Food" X="2185.648" Y="233.4323" Z="36.06238" />
+				<Vendor Name="Эйб Винтерс" Entry="2135" Type="Repair" X="2291.25" Y="213.134" Z="33.72502" />
+				<Vendor Name="Оливье Дворр" Entry="2136" Type="Repair" X="2286.631" Y="211.3589" Z="33.7249" />
+				<Vendor Name="Вильям Сальден" Entry="33996" Type="Food" X="2271.92" Y="268.179" Z="33.69067" />
+				<Vendor Name="Эбигейл Шиль" Entry="2118" Type="Repair" X="2301.646" Y="269.3627" Z="33.35699" />
+				
+			<!-- Garren's Farm Vendors -->
+				<Vendor Name="Ученик Криспин" Entry="38978" Type="Repair" X="2801.549" Y="249.5" Z="31.77237" />
+				
+			<!-- Brill Trainers -->	
+				<Vendor Name="Темный священник Берил" Entry="2129" Type="Train" TrainClass="Priest" X="2247.62" Y="230.661" Z="34.50973" />
+				<Vendor Name="Марион Зов" Entry="2130" Type="Train" TrainClass="Rogue" X="2293.15" Y="266.543" Z="33.35707" />
+				<Vendor Name="Руперт Бош" Entry="2127" Type="Train" TrainClass="Warlock" X="2320.06" Y="276.998" Z="22.73693" />
+				<Vendor Name="Остил де Мон" Entry="2131" Type="Train" TrainClass="Warrior" X="2283.69" Y="307.608" Z="33.92277" />
+				<Vendor Name="Кейн Песнь Пламени" Entry="2128" Type="Train" TrainClass="Mage" X="2238.42" Y="314.6788" Z="34.40267" />
+				<Vendor Name="Дедлоу Полынник" Entry="39100" Type="Train" TrainClass="Hunter" X="2231.24" Y="241.385" Z="33.57373" />
+				
+			<!-- Bastion Vendors -->	
+				<Vendor Name="Крамлод Дальневзор" Entry="44040" Type="Repair" X="1740.21" Y="-731.88" Z="60.06553" />
+				<Vendor Name="Поставщица Эльда" Entry="46271" Type="Food" X="1668.34" Y="-720.995" Z="58.9155" />
+			</Vendors>
+		</SetVendor>
+		
+		<!--<ClearMailbox />-->
+		<SetMailbox>
+			<Mailboxes>
+			<!--Brill Mailbox-->
+				<Mailbox X="2267.391" Y="290.4028" Z="33.6039" />
+			</Mailboxes>
+		</SetMailbox>
+	
+		<!--<If Condition="(Me.Race != WoWRace.Undead)">
+			<PickUp QuestName="Scourge on our Perimeter" QuestId="26801" GiverId="1569" GiverName="Shadow Priest Sarvis"/>
+			<Objective QuestName="Scourge on our Perimeter" QuestId="26801" Type="KillMob" MobId="1890" KillCount="8"/>
+			<TurnIn QuestName="Scourge on our Perimeter" QuestId="26801" TurnInId="1569" TurnInName="Shadow Priest Sarvis"/>
+		</If>-->
+		
+		<If Condition="(Me.Level &lt; 4)">
+			<CustomBehavior File="UserSettings" PullDistance="80" />
+			<SetGrindArea>
+				<GrindArea>
+					<MobIDs>1547, 1935, 1535</MobIDs>
+					<Hotspots>
+						<Hotspot X="2219.843" Y="1200.493" Z="34.15358" />
+						<Hotspot X="2235.428" Y="1177.032" Z="34.56881" />
+						<Hotspot X="2257.438" Y="1143.895" Z="32.98461" />
+						<Hotspot X="2273.095" Y="1209.61" Z="31.44255" />
+						<Hotspot X="2294.764" Y="1190.083" Z="31.44213" />
+						<Hotspot X="2292.302" Y="1238.644" Z="31.44255" />
+						<Hotspot X="2240.969" Y="1276.802" Z="37.59485" />
+						<Hotspot X="2159.956" Y="1177.814" Z="39.68343" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
+			<GrindTo Condition="(Me.Level &gt; 3)" />
+			<CustomBehavior File="UserSettings" PullDistance="6" />
+		</If>	
+		
+		
+		<PickUp QuestName="Reaping the Reapers" QuestId="24978" GiverName="Deathguard Simmer" GiverId="1519" X="2222.186" Y="1012.801" Z="37.12211" />
+		<PickUp QuestName="Fields of Grief" QuestId="24975" GiverName="Apothecary Johaan" GiverId="1518" X="2217.135" Y="1017.366" Z="37.12369" />
+		<PickUp QuestName="Ever So Lonely" QuestId="24974" GiverName="Sedrick Calston" GiverId="38925" X="2221.394" Y="1011.333" Z="45.25853" />
+		
+		<CustomBehavior File="UserSettings" PullDistance="25" />
+		<While Condition="(HasQuest(24974)) &amp;&amp; (!IsObjectiveComplete(1, 24974))">
+			<CustomBehavior File="CombatUseItemOnV2" MobId1="1544" MobId2="1543" ItemId="52059" 
+				X="2541.636" Y="1423.727" Z="-0.1061839"
+				UseItemStrategy="UseItemContinuouslyOnTargetDontDefend"
+				UseWhenMobHasHealthPercent="30" MaxRangeToUseItem="10"
+				WaitTimeAfterItemUse="5000"
+				ItemAppliesAuraId="AssumeItemUseAlwaysSucceeds"
+			/>
+		</While>
+		<Objective QuestId="24975" QuestName="Fields of Grief" Type="CollectItem" ItemId="2846" CollectCount="10" />
+		<CustomBehavior File="UserSettings" PullDistance="100" />
+		<Objective QuestId="24978" QuestName="Reaping the Reapers"  Type="KillMob" MobId="1934" KillCount="10" />
+		<CustomBehavior File="UserSettings" PullDistance="1" />
+		<If Condition="(HasQuest(24974)) &amp;&amp; (IsObjectiveComplete(1, 24974))">
+			<RunTo QuestId="24974" X="2225.667" Y="1013.092" Z="44.42582"   />
+			<CustomBehavior File="WaitTimer" WaitTime="10000" GoalText="Waiting for quest complete {TimeRemaining}" />
+		</If>	
+		<TurnIn QuestName="Ever So Lonely" QuestId="24974" TurnInName="Sedrick Calston" TurnInId="38925" X="2221.394" Y="1011.333" Z="45.25853" />
+		<TurnIn QuestName="Reaping the Reapers" QuestId="24978" TurnInName="Deathguard Simmer" TurnInId="1519" X="2222.186" Y="1012.801" Z="37.12211" />
+		<TurnIn QuestName="Fields of Grief" QuestId="24975" TurnInName="Apothecary Johaan" TurnInId="1518" X="2217.135" Y="1017.366" Z="37.12369" />
+
+		<PickUp QuestName="The Scarlet Palisade" QuestId="24980" GiverName="Deathguard Simmer" GiverId="1519" X="2222.186" Y="1012.801" Z="37.12211" />
+		<PickUp QuestName="Variety is the Spice of Death" QuestId="24976" GiverName="Apothecary Johaan" GiverId="1518" X="2217.135" Y="1017.366" Z="37.12369" />
+		<Objective QuestName="Variety is the Spice of Death" QuestId="24976" Type="CollectItem" ItemId="52067" CollectCount="4"/>
+		<Objective QuestName="Variety is the Spice of Death" QuestId="24976" Type="CollectItem" ItemId="52066" CollectCount="4"/>
+		<While Condition="(HasQuest(24976)) &amp;&amp; (!IsObjectiveComplete(3, 24976))">
+			<CustomBehavior File="InteractWith" FactionId="35" Range="5" WaitTime="500" CollectionDistance="300"
+			X="2582.999" Y="1468.595" Z="-1.400898"  />
+			<CustomBehavior File="WaitTimer" WaitTime="1000" GoalText="Waiting for count {TimeRemaining}" />
+		</While>
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestId="24980" QuestName="Reaping the Reapers"  Type="KillMob" MobId="1535" KillCount="10" />
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<If Condition="(HasItem(52079))" >
+			<PickUp QuestName="A Scarlet Letter" QuestId="24979" GiverType="Item" GiverId="52079" />
+		</If>
+		
+		<If Condition="HasQuest(24979) &amp;&amp; !IsQuestCompleted(24979)" >
+     		<RunTo QuestId="24979" X="2442.269" Y="1602.849" Z="72.15585" />
+		</If>
+		
+		<While Condition="HasQuest(24979) &amp;&amp; !IsQuestCompleted(24979)">
+			<CustomBehavior File="InteractWith" QuestId="24979" MobId="38999" WaitTime="2000" GossipOptions="1,1,1" X="2442.932" Y="1600.72" Z="72.1549" />
+			<CustomBehavior File="WaitTimer" WaitTime="15000" GoalText="Waiting for quest complete {TimeRemaining}" />
+		</While>
+		
+		<TurnIn QuestName="A Scarlet Letter" QuestId="24979" TurnInName="Deathguard Simmer" TurnInId="1519" X="2222.186" Y="1012.801" Z="37.12211" />
+		<TurnIn QuestName="The Scarlet Palisade" QuestId="24980" TurnInName="Deathguard Simmer" TurnInId="1519" X="2222.186" Y="1012.801" Z="37.12211" />
+		<TurnIn QuestName="Variety is the Spice of Death" QuestId="24976" TurnInName="Apothecary Johaan" TurnInId="1518" X="2217.135" Y="1017.366" Z="37.12369" />
+		
+		<PickUp QuestName="Johaan's Experiment" QuestId="24977" GiverName="Apothecary Johaan" GiverId="1518" X="2217.135" Y="1017.366" Z="37.12369" />
+		
+		<PickUp QuestName="Gordo's Task" QuestId="25038" GiverName="Gordo" GiverId="10666" X="2234.218" Y="1029.707" Z="36.28362" />
+		
+		<TurnIn QuestName="Johaan's Experiment" QuestId="24977" TurnInName="Captured Scarlet Zealot" TurnInId="1931" X="2252.24" Y="1013.35" Z="36.47283" />
+		<Objective QuestName="Gordo's Task" QuestId="25038" Type="CollectItem" ItemId="12737" CollectCount="3"/>
+		
+		<PickUp QuestName="A Putrid Task" QuestId="25090" GiverName="Deathguard Dillinger" GiverId="1496" X="2186.042" Y="658.8768" Z="32.98426" />
+		<PickUp QuestName="The New Forsaken" QuestId="24982" GiverName="Deathguard Dillinger" GiverId="1496" X="2186.042" Y="658.8768" Z="32.98426" />
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="A Putrid Task" QuestId="25090" Type="CollectItem" ItemId="2855" CollectCount="7"/>
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<TurnIn QuestName="A Putrid Task" QuestId="25090" TurnInName="Deathguard Dillinger" TurnInId="1496" X="2186.042" Y="658.8768" Z="32.98426" />
+		<TurnIn QuestName="Gordo's Task" QuestId="25038" TurnInName="Junior Apothecary Holland" TurnInId="10665" X="2251.464" Y="316.5362" Z="34.81499" />
+		<PickUp QuestName="Darkhound Pounding" QuestId="24990" GiverName="Junior Apothecary Holland" GiverId="10665" X="2251.464" Y="316.5362" Z="34.81499" />
+		<PickUp QuestName="Supplying Brill" QuestId="6321" GiverName="Deathguard Morris" GiverId="1745" X="2259.19" Y="316.231" Z="33.62688"  />
+		<PickUp QuestName="A Thorn in our Side" QuestId="24981" GiverName="Executor Zygand" GiverId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		<TurnIn QuestName="The New Forsaken" QuestId="24982" TurnInName="Magistrate Sevren" TurnInId="1499" X="2317.507" Y="279.2261" Z="44.98976" />
+		<PickUp QuestName="Forsaken Duties" QuestId="24983" GiverName="Magistrate Sevren" GiverId="1499" X="2317.507" Y="279.2261" Z="44.98976" />
+
+		<TurnIn QuestName="Supplying Brill" QuestId="6321" TurnInName="Anette Williams" TurnInId="43124" X="2272.85" Y="374.516" Z="35.84241" />
+		<PickUp QuestName="Ride to the Undercity" QuestId="6323" GiverName="Anette Williams" GiverId="43124" X="2272.85" Y="374.516" Z="35.84241" />
+		<TurnIn QuestName="Ride to the Undercity" QuestId="6323" TurnInName="Gordon Wendham" TurnInId="4556" X="1610.446" Y="283.261" Z="-43.10206" />
+		<PickUp QuestName="Michael Garrett" QuestId="6322" GiverName="Gordon Wendham" GiverId="4556" X="1610.446" Y="283.261" Z="-43.10206" />
+		<TurnIn QuestName="Michael Garrett" QuestId="6322" TurnInName="Michael Garrett" TurnInId="4551" X="1567.12" Y="266.345" Z="-43.10274"/>
+		<PickUp QuestName="Return to Morris" QuestId="6324" GiverName="Michael Garrett" GiverId="4551" X="1567.12" Y="266.345" Z="-43.10274"/>
+		<TurnIn QuestName="Return to Morris" QuestId="6324" TurnInName="Deathguard Morris" TurnInId="1745" X="2259.19" Y="316.231" Z="33.62688"/>
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="Darkhound Pounding" QuestId="24990" Type="CollectItem" ItemId="2858" CollectCount="5"/>
+		<Objective QuestName="A Thorn in our Side" QuestId="24981"  Type="KillMob" MobId="1537" KillCount="3" />
+		<Objective QuestName="A Thorn in our Side" QuestId="24981"  Type="KillMob" MobId="1536" KillCount="3" />
+		<Objective QuestName="A Thorn in our Side" QuestId="24981" Type="CollectItem" ItemId="52077" CollectCount="1"/>
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		
+		<If Condition="(!HasQuest(24992)) &amp;&amp; (!IsQuestCompleted(24992)) &amp;&amp; (!HasQuest(25039)) &amp;&amp; (!IsQuestCompleted(25039))" >
+     		<RunTo X="2006.443" Y="483.9128" Z="40.02323"  /> <!-- Auto-accept: Escaped From Gilneas -->
+			<CustomBehavior File="WaitTimer" WaitTime="10000" GoalText="Waiting for quest accept {TimeRemaining}" />
+		</If>
+
+		<TurnIn QuestName="Forsaken Duties" QuestId="24983" TurnInName="Deathguard Linnea" TurnInId="1495" X="2022.326" Y="74.04601" Z="36.44637" />
+		<PickUp QuestName="The Chill of Death" QuestId="24988" GiverName="Gretchen Dedmar" GiverId="1521" X="2017.219" Y="84.95139" Z="36.74083" />
+		<CustomBehavior File="UserSettings" PullDistance="80" />
+		<Objective QuestName="The Chill of Death" QuestId="24988" Type="CollectItem" ItemId="2876" CollectCount="5"/>
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<TurnIn QuestName="The Chill of Death" QuestId="24988" TurnInName="Gretchen Dedmar" TurnInId="1521" X="2017.219" Y="84.95139" Z="36.74083" />
+		<PickUp QuestName="Return to the Magistrate" QuestId="24989" GiverName="Deathguard Linnea" GiverId="1495" X="2022.326" Y="74.04601" Z="36.44637" />
+		<If Condition="HasQuest(24992)" >
+     		<TurnIn QuestName="Escaped From Gilneas" QuestId="24992" TurnInName="Executor Zygand" TurnInId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		</If>
+		<If Condition="(!HasQuest(24992)) &amp;&amp; (!IsQuestCompleted(24992)) &amp;&amp; (!HasQuest(25039)) &amp;&amp; (!IsQuestCompleted(25039))" >
+     		<PickUp QuestName="Have You Seen Anything Weird Out There?" QuestId="25039" GiverName="Ratslin Maime" GiverId="6785" X="2272.08" Y="237.106" Z="33.69078" />
+		</If>
+		<If Condition="HasQuest(25039)" >
+     		<TurnIn QuestName="Have You Seen Anything Weird Out There?" QuestId="25039" TurnInName="Executor Zygand" TurnInId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		</If>
+		
+		<TurnIn QuestName="A Thorn in our Side" QuestId="24981" TurnInName="Executor Zygand" TurnInId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		<PickUp QuestName="Annihilate the Worgen" QuestId="24993" GiverName="Executor Zygand" GiverId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		<TurnIn QuestName="Return to the Magistrate" QuestId="24989" TurnInName="Magistrate Sevren" TurnInId="1499" X="2317.507" Y="279.2261" Z="44.98976" />
+		<TurnIn QuestName="Darkhound Pounding" QuestId="24990" TurnInName="Junior Apothecary Holland" TurnInId="10665" X="2251.464" Y="316.5362" Z="34.81499" />
+		<PickUp QuestName="Holland's Experiment" QuestId="24996" GiverName="Junior Apothecary Holland" GiverId="10665" X="2251.464" Y="316.5362" Z="34.81499" />
+		<TurnIn QuestName="Holland's Experiment" QuestId="24996" TurnInName="Captured Mountaineer" TurnInId="2211" />
+		<PickUp QuestName="Garren's Haunt" QuestId="24991" GiverName="Junior Apothecary Holland" GiverId="10665" X="2251.464" Y="316.5362" Z="34.81499" />
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="Annihilate the Worgen" QuestId="24993" Type="KillMob" MobId="38967" KillCount="5" />
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<TurnIn QuestName="Annihilate the Worgen" QuestId="24993" TurnInName="Executor Zygand" TurnInId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		<TurnIn QuestName="Garren's Haunt" QuestId="24991" TurnInName="Apothecary Jerrod" TurnInId="38977" X="2796.415" Y="247.5156" Z="32.23879" />
+		<PickUp QuestName="Doom Weed" QuestId="24994" GiverName="Apothecary Jerrod" GiverId="38977" X="2796.415" Y="247.5156" Z="32.23879" />
+		<PickUp QuestName="Graverobbers" QuestId="24997" GiverName="Apprentice Crispin" GiverId="38978" X="2801.549" Y="249.5" Z="31.77242" />
+		<Objective QuestName="Doom Weed" QuestId="24994" Type="CollectItem" ItemId="13702" CollectCount="10"/>
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="Graverobbers" QuestId="24997" Type="KillMob" MobId="1941" KillCount="8" />
+		<Objective QuestName="Graverobbers" QuestId="24997" Type="KillMob" MobId="1675" KillCount="5" />
+		<Objective QuestName="Graverobbers" QuestId="24997" Type="CollectItem" ItemId="2834" CollectCount="6"/>
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<TurnIn QuestName="Graverobbers" QuestId="24997" TurnInName="Apprentice Crispin" TurnInId="38978" X="2801.549" Y="249.5" Z="31.77242" />
+		<PickUp QuestName="Maggot Eye" QuestId="24998" GiverName="Apprentice Crispin" GiverId="38978" X="2801.549" Y="249.5" Z="31.77242" />
+		<TurnIn QuestName="Doom Weed" QuestId="24994" TurnInName="Apothecary Jerrod" TurnInId="38977" X="2796.415" Y="247.5156" Z="32.23879" />
+		<PickUp QuestName="Off the Scales" QuestId="24995" GiverName="Apothecary Jerrod" GiverId="38977" X="2796.415" Y="247.5156" Z="32.23879" />
+		<PickUp QuestName="Planting the Seed of Fear" QuestId="24999" GiverName="Apprentice Crispin" GiverId="38978" X="2801.549" Y="249.5" Z="31.77242" />
+		<Objective QuestName="Maggot Eye" QuestId="24998" Type="CollectItem" ItemId="3635" CollectCount="1"/>
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="Off the Scales" QuestId="24995" Type="CollectItem" ItemId="2859" CollectCount="5"/>
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<While Condition="(HasQuest(24999)) &amp;&amp; (!IsQuestCompleted(24999))">
+			<CustomBehavior File="InteractWith" MobId="38937" Range="5" WaitTime="500"
+			X="2979.72" Y="357.0742" Z="7.926041"  />
+			<CustomBehavior File="WaitTimer" WaitTime="1000" GoalText="Waiting for count {TimeRemaining}" />
+		</While>
+		<TurnIn QuestName="Maggot Eye" QuestId="24998" TurnInName="Apprentice Crispin" TurnInId="38978" X="2801.549" Y="249.5" Z="31.77242" />
+		<TurnIn QuestName="Planting the Seed of Fear" QuestId="24999" TurnInName="Apprentice Crispin" TurnInId="38978" X="2801.549" Y="249.5" Z="31.77242" />
+		<TurnIn QuestName="Off the Scales" QuestId="24995" TurnInName="Apothecary Jerrod" TurnInId="38977" X="2796.415" Y="247.5156" Z="32.23879" />
+		<PickUp QuestName="Head for the Mills" QuestId="25031" GiverName="Apothecary Jerrod" GiverId="38977" X="2796.415" Y="247.5156" Z="32.23879" />
+		<TurnIn QuestName="Head for the Mills" QuestId="25031" TurnInName="Coleman Farthing" TurnInId="1500" X="2936.989" Y="566.5" Z="91.44165" />
+		<PickUp QuestName="The Family Crypt" QuestId="25003" GiverName="Coleman Farthing" GiverId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		<CustomBehavior File="UserSettings" PullDistance="30" />
+		
+		<If Condition="(!HasQuest(25030) &amp;&amp; !IsQuestCompleted(25030) &amp;&amp; !HasItem(3082))" >
+			<LootMobs Value="true" />
+			<SetGrindArea>
+				<GrindArea>
+					<MobIDs>1658</MobIDs>
+					<Hotspots>
+						<Hotspot X="3041.367" Y="651.8279" Z="58.10853" />
+					</Hotspots>
+				</GrindArea>
+			</SetGrindArea>
+			<GrindTo Condition="(HasItem(3082))" />
+			<LootMobs Value="null" />
+		</If>
+		<CustomBehavior File="UserSettings" PullDistance="80" />
+		<Objective QuestName="The Family Crypt" QuestId="25003" Type="KillMob" MobId="1534" KillCount="5" />
+		<Objective QuestName="The Family Crypt" QuestId="25003" Type="KillMob" MobId="1530" KillCount="5" />
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<If Condition="(HasItem(3082))" >
+			<PickUp QuestName="The Haunted Mills" QuestId="25030" GiverType="Item" GiverId="3082" />
+		</If>
+		<If Condition="HasQuest(25030)" >
+     		<TurnIn QuestName="The Haunted Mills" QuestId="25030" TurnInName="Coleman Farthing" TurnInId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		</If>
+		<TurnIn QuestName="The Family Crypt" QuestId="25003" TurnInName="Coleman Farthing" TurnInId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		<PickUp QuestName="Deaths in the Family" QuestId="25029" GiverName="Coleman Farthing" GiverId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		<PickUp QuestName="The Mills Overrun" QuestId="25004" GiverName="Coleman Farthing" GiverId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		<Objective QuestName="Deaths in the Family" QuestId="25029" Type="CollectItem" ItemId="2828" CollectCount="1"/>
+		<Objective QuestName="Deaths in the Family" QuestId="25029" Type="CollectItem" ItemId="2831" CollectCount="1"/>
+		<Objective QuestName="Deaths in the Family" QuestId="25029" Type="CollectItem" ItemId="2829" CollectCount="1"/>
+		<Objective QuestName="Deaths in the Family" QuestId="25029" Type="CollectItem" ItemId="2830" CollectCount="1"/>
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="The Mills Overrun" QuestId="25004" Type="CollectItem" ItemId="3162" CollectCount="5"/>
+		<Objective QuestName="The Mills Overrun" QuestId="25004" Type="CollectItem" ItemId="3163" CollectCount="3"/>
+		<!--<Objective Type="KillMob" MobId="1658" KillCount="1" />-->
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		
+		<TurnIn QuestName="Deaths in the Family" QuestId="25029" TurnInName="Coleman Farthing" TurnInId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		<TurnIn QuestName="The Mills Overrun" QuestId="25004" TurnInName="Coleman Farthing" TurnInId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		<PickUp QuestName="Speak with Sevren" QuestId="25005" GiverName="Coleman Farthing" GiverId="1500" X="2936.989" Y="566.5" Z="91.44165"  />
+		
+		<TurnIn QuestName="Speak with Sevren" QuestId="25005" TurnInName="Magistrate Sevren" TurnInId="1499" X="2317.507" Y="279.2261" Z="44.98976" />
+		<PickUp QuestName="The Grasp Weakens" QuestId="25006" GiverName="Magistrate Sevren" GiverId="1499" X="2317.507" Y="279.2261" Z="44.98976" />
+		
+		<While Condition="(HasQuest(25006)) &amp;&amp; (!IsQuestCompleted(25006))">
+			<CustomBehavior File="InteractWith" MobId="39117"  GossipOptions="1" X="2242.281" Y="230.375" Z="34.50977" />
+			<CustomBehavior File="WaitTimer" WaitTime="5000" GoalText="Waiting for qp {TimeRemaining}" />
+			<RunTo X="2246.727" Y="229.2864" Z="42.67905" />
+			<CustomBehavior File="WaitTimer" WaitTime="85000" GoalText="Waiting for qc {TimeRemaining}" />		
+		</While>
+		
+		<TurnIn QuestName="The Grasp Weakens" QuestId="25006" TurnInName="Magistrate Sevren" TurnInId="1499" X="2317.507" Y="279.2261" Z="44.98976" />
+		
+		<PickUp QuestName="East... Always to the East" QuestId="25007" GiverName="Magistrate Sevren" GiverId="1499" X="2317.507" Y="279.2261" Z="44.98976" />
+		<TurnIn QuestName="East... Always to the East" QuestId="25007" TurnInName="High Executor Derrington" TurnInId="10837" X="1759.283" Y="-729.0208" Z="60.06602" />
+		
+		<PickUp QuestName="At War With The Scarlet Crusade" QuestId="25009" GiverName="High Executor Derrington" GiverId="10837" X="1759.283" Y="-729.0208" Z="60.06602" />
+		<PickUp QuestName="Grisly Grizzlies" QuestId="25056" GiverName="Apothecary Dithers" GiverId="11057" X="1751.823" Y="-729.9869" Z="60.06592" />
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="At War With The Scarlet Crusade" QuestId="25009" Type="KillMob" MobId="1537" KillCount="3" />
+		<Objective QuestName="At War With The Scarlet Crusade" QuestId="25009" Type="KillMob" MobId="1538" KillCount="4" />
+		<Objective QuestName="Grisly Grizzlies" QuestId="25056" Type="CollectItem" ItemId="52270" CollectCount="5"/>
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+		<TurnIn QuestName="Grisly Grizzlies" QuestId="25056" TurnInName="Apothecary Dithers" TurnInId="11057" X="1751.823" Y="-729.9869" Z="60.06592" />
+		<PickUp QuestName="A Little Oomph" QuestId="25013" GiverName="Apothecary Dithers" GiverId="11057" X="1751.823" Y="-729.9869" Z="60.06592" />
+		<TurnIn QuestName="At War With The Scarlet Crusade" QuestId="25009" TurnInName="High Executor Derrington" TurnInId="10837" X="1759.283" Y="-729.0208" Z="60.06602" />
+		<PickUp QuestName="A Deadly New Ally" QuestId="25010" GiverName="High Executor Derrington" GiverId="10837" X="1759.283" Y="-729.0208" Z="60.06602" />
+		
+		<TurnIn QuestName="A Deadly New Ally" QuestId="25010" TurnInName="Lieutenant Sanders" TurnInId="13158" X="2532.666" Y="-921.212" Z="56.26828" />
+		<PickUp QuestName="A Daughter's Embrace" QuestId="25046" GiverName="Lieutenant Sanders" GiverId="13158" X="2532.666" Y="-921.212" Z="56.26828" />
+		<While Condition="(HasQuest(25046)) &amp;&amp; (!IsQuestCompleted(25046))">
+			<RunTo X="3080.804" Y="-556.3149" Z="126.724" />
+			<CustomBehavior File="WaitTimer" WaitTime="30000" GoalText="Waiting for qc {TimeRemaining}" />
+			<RunTo X="3076.554" Y="-563.7787" Z="126.7207" />
+		</While>
+		<CustomBehavior File="UserSettings" PullDistance="50" />
+		<Objective QuestName="A Little Oomph" QuestId="25013" Type="CollectItem" ItemId="2872" CollectCount="4"/>
+		<CustomBehavior File="UserSettings" PullDistance="5" />
+
+		<TurnIn QuestName="A Daughter's Embrace" QuestId="25046" TurnInName="High Executor Derrington" TurnInId="10837" X="1759.283" Y="-729.0208" Z="60.06602" />
+		<TurnIn QuestName="A Little Oomph" QuestId="25013" TurnInName="Apothecary Dithers" TurnInId="11057" X="1751.823" Y="-729.9869" Z="60.06592" />
+		<PickUp QuestName="To Bigger and Better Things" QuestId="25011" GiverName="High Executor Derrington" GiverId="10837" X="1759.283" Y="-729.0208" Z="60.06602" />
+		<TurnIn QuestName="To Bigger and Better Things" QuestId="25011" TurnInName="Timothy Cunningham" TurnInId="37915" X="1730.373" Y="-743.1945" Z="60.06459" />
+		<PickUp QuestName="Take to the Skies" QuestId="25012" GiverName="Timothy Cunningham" GiverId="37915" X="1730.373" Y="-743.1945" Z="60.06459" />
+		<If Condition="(HasQuest(25012) &amp;&amp; ((new Styx.WoWPoint(1730.373, -743.1945, 60.06459)).DistanceSqr(StyxWoW.Me.Location) &lt; 500*500 ))">
+			<CustomBehavior File="InteractWith" MobId="37915" GossipOptions="2" WaitTime="5000" X="1730.373" Y="-743.1945" Z="60.06459" />
+		</If>
+		<TurnIn QuestName="Take to the Skies" QuestId="25012" TurnInName="Executor Zygand" TurnInId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		<PickUp QuestName="Warchief's Command: Silverpine Forest!" QuestId="26964" GiverName="Executor Zygand" GiverId="1515" X="2275.082" Y="297.6129" Z="33.6494" />
+		
+		<CustomBehavior File="LoadProfile" ProfileName="[HQ] Undead 10-20" /> 
+	</QuestOrder>
+</HBProfile>
+	

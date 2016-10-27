@@ -1,0 +1,95 @@
+<HBProfile>
+	<Name>[HQ] Arathi 25-30</Name>
+	<MinDurability>0.2</MinDurability>
+	<MinFreeBagSlots>3</MinFreeBagSlots>
+	<MinLevel>1</MinLevel>
+	<MaxLevel>9999</MaxLevel>
+	<MailGrey>False</MailGrey>
+	<MailWhite>False</MailWhite>
+	<MailGreen>True</MailGreen>
+	<SellGrey>True</SellGrey>
+	<SellWhite>True</SellWhite>
+	<SellGreen>True</SellGreen>
+	<SellBlue>False</SellBlue>
+	<SellPurple>False</SellPurple>
+	
+	<AvoidMobs>
+
+	</AvoidMobs>
+	
+	<Blackspots>
+
+	</Blackspots>
+	
+	<Mailboxes>
+
+	</Mailboxes>
+	
+	<Vendors>
+
+	</Vendors>
+	
+ 
+	
+		 <Objective Type="CollectItem" ItemId="63029" CollectCount="60">
+			<CollectFrom>
+				<GameObject Name="Creeper Egg" Id="47203" />
+			</CollectFrom>
+			<Hotspots>
+            	<Hotspot X="-749.8241" Y="212.2589" Z="53.1489" />
+				<Hotspot X="-814.3295" Y="257.6889" Z="37.16104" />
+				<Hotspot X="-814.1238" Y="125.9441" Z="42.11726" />
+            </Hotspots>
+		</Objective>
+	</Quest>
+	
+	<QuestOrder IgnoreCheckPoints="True" >
+
+	<CustomBehavior File="UserSettings" LootMobs="True" UseFlightPaths="False" PullDistance="25" />
+		<If Condition="(Me.MapId == 1)" >
+			<CustomBehavior File="UseTransport"
+							TransportId="164871"
+							WaitAtX="1847.018" WaitAtY="-4391.375" WaitAtZ="135.564" 
+							StandOnX="1847.018" StandOnY="-4385.694" StandOnZ="135.0334" 
+							TransportStartX="1833.509" TransportStartY="-4391.543" TransportStartZ="152.7679"
+							TransportEndX="2062.376" TransportEndY="292.998" TransportEndZ="114.973"
+							GetOffX="2066.773" GetOffY="288.873" GetOffZ="97.03159" />
+		</If>
+		<If Condition="(Me.ZoneId == 3430) || (Me.ZoneId == 3433) || (Me.ZoneId == 6455) || (Me.ZoneId == 3487)" >
+			<RunTo X="10021" Y="-7014" Z="49.71769"  />
+			<CustomBehavior File="RunMacro" Macro="/dismount" NumOfTimes="1" WaitTime="1000"/>
+			<CustomBehavior File="WaitTimer" WaitTime="2000" GoalText="Waiting for  {TimeRemaining}" />
+			 <While Condition="(Me.ZoneId != 1497)" >
+				<CustomBehavior File="InteractWith" MobId="184502" Range="5" X="10021" Y="-7014" Z="49.71769"  />
+				<CustomBehavior File="WaitTimer" WaitTime="30000" GoalText="Waiting for  {TimeRemaining}" />
+			 </While>
+		</If>
+		<ClearVendor />
+		<SetVendor>
+			<Vendors>
+			</Vendors>
+		</SetVendor>
+		
+		<ClearMailbox />
+		<SetMailbox>
+			<Mailboxes>
+			
+			</Mailboxes>
+		</SetMailbox>
+	
+		<If Condition="HasQuest(28619)" >
+			<TurnIn QuestName="Warchief's Command: Arathi Highlands!" QuestId="28619" TurnInName="Dark Ranger Alina" TurnInId="41949" />
+		</If>
+		<If Condition="(!HasQuest(28619)) &amp;&amp; (!IsQuestCompleted(28619)) &amp;&amp; (!HasQuest(28572)) &amp;&amp; (!IsQuestCompleted(28572))" >
+     		<PickUp QuestName="Warchief's Command: Arathi Highlands!" QuestId="28572" GiverName="Warchief's Command Board" GiverType="Object" GiverId="207324" />
+		</If>
+		<If Condition="HasQuest(28572)" >
+     		<TurnIn QuestName="Warchief's Command: Arathi Highlands!" QuestId="28572" TurnInName="Dark Ranger Alina" TurnInId="41949" />
+		</If>
+		
+		
+		<!--<CustomBehavior File="LoadProfile" ProfileName="[HQ] Hillsbrad 20-25" />-->
+	</QuestOrder>
+
+</HBProfile>
+	
